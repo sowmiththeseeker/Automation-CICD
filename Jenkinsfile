@@ -1,25 +1,25 @@
 pipeline {
     stages {
         stage('checkout') {
-            git checkout
+            //git checkout
 
         }
 
         stage('build') {
             // Maven or Gradle
-            mvn clean package
-            dotnet build
-            npm build //angular or nodejs
+            //mvn clean package
+           // dotnet build
+            //npm build //angular or nodejs
 
         }
         stage('test') {
-            mvn test
-            dotnet test
-            npm build
+            //mvn test
+            //dotnet test
+           // npm build
 
         }
         stage('scan') {
-            mv sonar:sonar //spnarqube //url //credeentials
+           // mv sonar:sonar //spnarqube //url //credeentials
             //service accounts
 
         }
